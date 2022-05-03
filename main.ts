@@ -1,7 +1,3 @@
-let legoMode = 0;
-
-pfTransmitter.connectIrSenderLed(AnalogPin.P2)
-
 bluetooth.startUartService()
 
 basic.showIcon(IconNames.Square)
@@ -13,6 +9,10 @@ bluetooth.onBluetoothConnected(function () {
 bluetooth.onBluetoothDisconnected(function () {
     basic.showIcon(IconNames.No)
 })
+
+let legoMode = 0;
+
+pfTransmitter.connectIrSenderLed(AnalogPin.P2)
 
 input.onButtonPressed(Button.AB, function () {
     legoMode += 1;

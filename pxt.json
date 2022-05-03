@@ -3,7 +3,6 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "microphone": "*",
         "bluetooth": "*",
         "PF Transmitter": "github:aorczyk/lego-pf-transmitter#v0.0.7"
     },
